@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Construcciones | Obras Específicas</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#022226',    // Dark Slate Gray principal
+                        brandLight: '#AAD8D8',   // Crystal para acentos
+                        brandMedium: '#244F4E',  // Dark Slate Gray intermedio
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .bg-blueprint {
+            background-color: #022226;
+            background-image: 
+                linear-gradient(rgba(170, 216, 216, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(170, 216, 216, 0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-blueprint text-slate-200 min-h-screen flex flex-col justify-between">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header class="border-b border-brandMedium/30 bg-brandDark/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex flex-col">
+                <span class="text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
+                <span class="text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-white transition-colors">Nosotros</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
+                <a href="obras.html" class="text-brandLight transition-colors">Obras</a>
+                <a href="contacto.html" class="text-slate-300 hover:text-white transition-colors">Contacto</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
+                    Cotizar Obra
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL: PORTAFOLIO DE OBRAS -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12 md:py-20 space-y-16">
+        
+        <!-- Encabezado de Sección -->
+        <div class="max-w-3xl space-y-4">
+            <p class="text-brandLight text-xs font-semibold uppercase tracking-widest">Portafolio Técnico</p>
+            <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
+                Proyectos estructurales e industriales de gran envergadura.
+            </h1>
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                El respaldo de nuestra firma radica en la escala de las obras ejecutadas con éxito. Ingeniería de precisión adaptada a los requerimientos de cada cliente.
+            </p>
+        </div>
+
+        <!-- Fichas de Obras Destacadas -->
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Obra 1: Ventura Mall -->
+            <div class="p-8 rounded-xl bg-brandMedium/20 border border-brandMedium/40 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span class="text-xs font-mono font-bold text-brandLight bg-brandMedium/50 px-2.5 py-1 rounded border border-brandLight/20">Ingeniería Estructural</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Estructura Obra Gris – Ventura Mall</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ejecución masiva de la estructura de hormigón armado, fundaciones y soporte estructural base para uno de los centros comerciales de referencia en Bolivia. Rigor absoluto en el vaciado y la logística interna de materiales a gran escala.
+                    </p>
+                    
+                    <!-- Ficha Técnica Rápida -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-brandMedium/20 text-xs font-mono">
+                        <div>
+                            <span class="text-slate-500 block">Magnitud:</span>
+                            <span class="text-white font-medium">65,000 m²</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block">Ubicación:</span>
+                            <span class="text-white font-medium">Santa Cruz de la Sierra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obra 2: Naves Industriales -->
+            <div class="p-8 rounded-xl bg-brandMedium/20 border border-brandMedium/40 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span class="text-xs font-mono font-bold text-brandLight bg-brandMedium/50 px-2.5 py-1 rounded border border-brandLight/20">Infraestructura Logística</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Módulos de Naves Industriales</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Cálculo estructural, cimentación especializada para cargas dinámicas pesadas y montaje de cubiertas metálicas de grandes luces para almacenamiento masivo y operaciones agroindustriales en el oriente boliviano.
+                    </p>
+                    
+                    <!-- Ficha Técnica Rápida -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-brandMedium/20 text-xs font-mono">
+                        <div>
+                            <span class="text-slate-500 block">Total Ejecutado:</span>
+                            <span class="text-white font-medium">73,920 m²</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block">Tipología:</span>
+                            <span class="text-white font-medium">Estructuras Metálicas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obra 3: Movimiento y Replanteo (Genérico de Infraestructura) -->
+            <div class="p-8 rounded-xl bg-brandMedium/20 border border-brandMedium/40 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span class="text-xs font-mono font-bold text-brandLight bg-brandMedium/50 px-2.5 py-1 rounded border border-brandLight/20">Fase de Suelos</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Preparación y Movimiento de Tierras</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Estudios topográficos avanzados, replanteo de precisión y optimización del transporte de agregados. Coordinación sincronizada de maquinaria pesada para habilitación de terrenos complejos y control de rasantes.
+                    </p>
+                    
+                    <!-- Ficha Técnica Rápida -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-brandMedium/20 text-xs font-mono">
+                        <div>
+                            <span class="text-slate-500 block">Enfoque:</span>
+                            <span class="text-white font-medium">Logística Eficiente</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block">Control:</span>
+                            <span class="text-white font-medium">Ciclo de Maquinaria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obra 4: Edificaciones Especiales -->
+            <div class="p-8 rounded-xl bg-brandMedium/20 border border-brandMedium/40 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span class="text-xs font-mono font-bold text-brandLight bg-brandMedium/50 px-2.5 py-1 rounded border border-brandLight/20">Consultoría de Obra</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Optimización de Cómputos Métricos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Auditoría de planos de proyectos residenciales de altura y comerciales medianos. Intervención en el desglose de análisis de precios unitarios (APU), logrando ahorros significativos mediante ingeniería de valor antes de la ejecución.
+                    </p>
+                    
+                    <!-- Ficha Técnica Rápida -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-brandMedium/20 text-xs font-mono">
+                        <div>
+                            <span class="text-slate-500 block">Servicio:</span>
+                            <span class="text-white font-medium">Ingeniería de Valor</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block">Resultado:</span>
+                            <span class="text-white font-medium">Eficiencia Presupuestaria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 3. PIE DE PÁGINA -->
+    <footer class="border-t border-brandMedium/20 bg-brandDark py-8 text-xs text-slate-500 mt-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 GP Construcciones S.R.L. - NIT 619666029. Todos los derechos reservados.</p>
+            <p>Santa Cruz de la Sierra, Bolivia</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Construcciones | Inicio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Inyectamos los colores corporativos exactos del manual en Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#022226',    // Dark Slate Gray
+                        brandLight: '#AAD8D8',   // Crystal
+                        brandMedium: '#244F4E',  // Dark Slate Gray secundario
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Ajustamos la cuadrícula técnica con los colores oficiales */
+        .bg-blueprint {
+            background-color: #022226;
+            background-image: 
+                linear-gradient(rgba(170, 216, 216, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(170, 216, 216, 0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-blueprint text-slate-200 min-h-screen flex flex-col justify-between">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header class="border-b border-brandMedium/30 bg-brandDark/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logotipo Institucional -->
+            <a href="index.html" class="flex flex-col">
+                <span class="text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
+                <span class="text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
+            </a>
+            
+            <!-- Menú Multipágina -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-brandLight transition-colors">Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-white transition-colors">Nosotros</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
+                <a href="obras.html" class="text-slate-300 hover:text-white transition-colors">Obras</a>
+                <a href="contacto.html" class="text-slate-300 hover:text-white transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Botón de Contacto Rápido -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium hover:bg-opacity-80 border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
+                    Cotizar Obra
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN HERO -->
+    <main class="flex-grow">
+        <section class="max-w-7xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-brandMedium/40 border border-brandLight/20 text-brandLight text-xs font-medium tracking-wide">
+                    <span>🏢 Soluciones integrales de construcción civil e industrial</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Ingeniería con <span class="text-brandLight">experiencia real</span> al servicio de tu obra.
+                </h1>
+                <p class="text-slate-400 text-sm md:text-base max-w-xl leading-relaxed">
+                    Tu ingeniero asesor. Especialistas en construcción civil, naves industriales y estructuras metálicas en Santa Cruz de la Sierra con más de 25 años en obra.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="servicios.html" class="bg-brandLight hover:bg-opacity-90 text-brandDark px-6 py-3 rounded font-bold text-sm transition-all">
+                        Ver Servicios
+                    </a>
+                    <a href="nosotros.html" class="border border-brandMedium hover:border-brandLight/40 text-slate-300 hover:text-white px-6 py-3 rounded font-semibold text-sm transition-all">
+                        Conocer Trayectoria
+                    </a>
+                </div>
+            </div>
+
+            <!-- Gráfico Lineal del Isotipo -->
+            <div class="relative flex justify-center items-center">
+                <div class="absolute w-72 h-72 bg-brandLight/5 rounded-full blur-3xl -z-10"></div>
+                <!-- Simulación vectorial limpia del marco y malla estructural del brochure -->
+                <svg class="w-full max-w-sm opacity-20 text-brandLight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="10" y="10" width="180" height="180" rx="30" />
+                    <rect x="25" y="25" width="150" height="150" rx="15" />
+                    <path d="M 50,75 L 120,75 C 140,75 150,85 150,100 C 150,115 140,125 120,125 L 50,125 Z" />
+                    <path d="M 75,75 L 75,150" stroke-width="2"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 3. DATOS DE IMPACTO -->
+        <section class="border-t border-brandMedium/30 bg-black/10 py-12">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                <div class="space-y-1">
+                    <p class="text-4xl font-bold text-white tracking-tight">+25</p>
+                    <p class="text-xs text-brandLight font-medium uppercase tracking-widest">Años de experiencia en obra</p>
+                </div>
+                <div class="space-y-1 border-y sm:border-y-0 sm:border-x border-brandMedium/30 py-6 sm:py-0">
+                    <p class="text-4xl font-bold text-white tracking-tight">65,000 m²</p>
+                    <p class="text-xs text-brandLight font-medium uppercase tracking-widest">Obra gris Ventura Mall</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-4xl font-bold text-white tracking-tight">73,920 m²</p>
+                    <p class="text-xs text-brandLight font-medium uppercase tracking-widest">Naves industriales ejecutadas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. PIE DE PÁGINA -->
+    <footer class="border-t border-brandMedium/20 bg-brandDark py-8 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 GP Construcciones S.R.L. - NIT 619666029. Todos los derechos reservados.</p>
+            <p>Santa Cruz de la Sierra, Bolivia</p>
+        </div>
+    </footer>
+
+</body>
+</html>

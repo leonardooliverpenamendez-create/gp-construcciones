@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Construcciones | Contacto</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#022226',    // Dark Slate Gray principal
+                        brandLight: '#AAD8D8',   // Crystal para acentos
+                        brandMedium: '#244F4E',  // Dark Slate Gray intermedio
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .bg-blueprint {
+            background-color: #022226;
+            background-image: 
+                linear-gradient(rgba(170, 216, 216, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(170, 216, 216, 0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-blueprint text-slate-200 min-h-screen flex flex-col justify-between">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header class="border-b border-brandMedium/30 bg-brandDark/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex flex-col">
+                <span class="text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
+                <span class="text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-white transition-colors">Nosotros</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
+                <a href="obras.html" class="text-slate-300 hover:text-white transition-colors">Obras</a>
+                <a href="contacto.html" class="text-brandLight transition-colors">Contacto</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
+                    Cotizar Obra
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL: CONTACTO -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-5 gap-12 items-start">
+        
+        <!-- Bloque Izquierdo: Información Institucional (2 columnas) -->
+        <div class="md:col-span-2 space-y-8">
+            <div class="space-y-4">
+                <p class="text-brandLight text-xs font-semibold uppercase tracking-widest">Canales Oficiales</p>
+                <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Hablemos de tu próximo proyecto.</h1>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Si necesitas una cotización base, optimizar un presupuesto existente o asesoramiento técnico en obra, estamos listos para responder.
+                </p>
+            </div>
+
+            <div class="space-y-6 text-sm border-t border-brandMedium/20 pt-6">
+                <!-- Ubicación -->
+                <div class="flex items-start gap-4">
+                    <div class="text-brandLight mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Oficina Central</h4>
+                        <p class="text-slate-400 text-xs mt-0.5">Santa Cruz de la Sierra, Bolivia</p>
+                    </div>
+                </div>
+
+                <!-- Respaldo Legal -->
+                <div class="flex items-start gap-4">
+                    <div class="text-brandLight mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Información Fiscal</h4>
+                        <p class="text-slate-400 text-xs mt-0.5">GP Construcciones S.R.L.</p>
+                        <p class="text-slate-500 text-xs font-mono">NIT: 619666029</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón de Enlace Directo a WhatsApp -->
+            <div class="pt-2">
+                <a href="https://wa.me/59171012105" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brandMedium hover:bg-opacity-80 border border-brandLight/30 text-brandLight text-sm font-semibold px-6 py-3.5 rounded transition-all">
+                    <span>📱 Contactar vía WhatsApp</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bloque Derecho: Formulario Técnico Integrado (3 columnas) -->
+        <div class="md:col-span-3 bg-brandMedium/10 border border-brandMedium/30 p-8 rounded-xl space-y-6">
+            <h3 class="text-lg font-semibold text-white tracking-tight border-b border-brandMedium/20 pb-3">Enviar un requerimiento técnico</h3>
+            
+            <form action="#" method="POST" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-400 font-medium">Nombre completo</label>
+                        <input type="text" placeholder="Ej. Juan Pérez" class="w-full bg-brandDark border border-brandMedium/50 rounded px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandLight/65 transition-colors">
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-400 font-medium">Teléfono / Celular</label>
+                        <input type="tel" placeholder="Ej. +591 7XXXXXXX" class="w-full bg-brandDark border border-brandMedium/50 rounded px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandLight/65 transition-colors">
+                    </div>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-400 font-medium">Tipo de Obra / Requerimiento</label>
+                    <select class="w-full bg-brandDark border border-brandMedium/50 rounded px-4 py-2.5 text-sm text-slate-300 focus:outline-none focus:border-brandLight/65 transition-colors">
+                        <option>Construcción Civil / Edificación</option>
+                        <option>Naves Industriales / Tinglados</option>
+                        <option>Movimiento de Tierras</option>
+                        <option>Cómputos Métricos y Presupuestos</option>
+                        <option>Otros Asesoramientos</option>
+                    </select>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-400 font-medium">Detalles del Proyecto</label>
+                    <textarea rows="4" placeholder="Describa brevemente la magnitud de la obra, ubicación o requerimientos específicos..." class="w-full bg-brandDark border border-brandMedium/50 rounded px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandLight/65 transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="button" onclick="alert('Formulario de demostración técnica.')" class="w-full bg-brandLight hover:bg-opacity-90 text-brandDark font-bold text-sm py-3 rounded transition-all uppercase tracking-wider">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- 3. PIE DE PÁGINA -->
+    <footer class="border-t border-brandMedium/20 bg-brandDark py-8 text-xs text-slate-500 mt-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 GP Construcciones S.R.L. - NIT 619666029. Todos los derechos reservados.</p>
+            <p>Santa Cruz de la Sierra, Bolivia</p>
+        </div>
+    </footer>
+
+</body>
+</html>
