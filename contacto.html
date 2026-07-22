@@ -39,23 +39,34 @@
 <body class="bg-blueprint text-slate-200 min-h-screen flex flex-col justify-between">
 
     <!-- 1. BARRA DE NAVEGACIÓN -->
+    <!-- 1. BARRA DE NAVEGACIÓN CORREGIDA (APTA PARA MÓVILES) -->
     <header class="border-b border-brandMedium/30 bg-brandDark/95 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex flex-col">
-                <span class="text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
-                <span class="text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
-            </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Logotipo Institucional -->
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="index.html" class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
+                    <span class="text-[10px] md:text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
+                </a>
+                <!-- Botón de WhatsApp rápido visible solo en móvil -->
+                <a href="https://wa.me/59171012105" target="_blank" class="md:hidden bg-brandMedium border border-brandLight/30 text-brandLight text-[11px] uppercase tracking-wider font-semibold px-3 py-1.5 rounded">
+                    Cotizar
+                </a>
+            </div>
             
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <!-- Menú Adaptativo: Se acomoda en fila compacta en móviles y horizontal en PC -->
+            <nav class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs md:text-sm font-medium w-full md:w-auto border-t border-brandMedium/20 pt-3 md:pt-0 md:border-t-0">
+                <!-- Nota: Cambia la clase 'text-brandLight' al archivo correspondiente para resaltar la página activa -->
                 <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Inicio</a>
                 <a href="nosotros.html" class="text-slate-300 hover:text-white transition-colors">Nosotros</a>
                 <a href="servicios.html" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
                 <a href="obras.html" class="text-slate-300 hover:text-white transition-colors">Obras</a>
-                <a href="contacto.html" class="text-brandLight transition-colors">Contacto</a>
+                <a href="contacto.html" class="text-slate-300 hover:text-white transition-colors">Contacto</a>
             </nav>
 
+            <!-- Botón de Escritorio -->
             <div class="hidden md:block">
-                <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
+                <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium hover:bg-opacity-80 border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
                     Cotizar Obra
                 </a>
             </div>
@@ -65,17 +76,7 @@
     <!-- 2. CONTENIDO PRINCIPAL: CONTACTO -->
     <main class="flex-grow max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-5 gap-12 items-start">
         
-        <!-- Bloque Izquierdo: Información Institucional (2 columnas) -->
-        <div class="md:col-span-2 space-y-8">
-            <div class="space-y-4">
-                <p class="text-brandLight text-xs font-semibold uppercase tracking-widest">Canales Oficiales</p>
-                <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Hablemos de tu próximo proyecto.</h1>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Si necesitas una cotización base, optimizar un presupuesto existente o asesoramiento técnico en obra, estamos listos para responder.
-                </p>
-            </div>
-
-            <div class="space-y-6 text-sm border-t border-brandMedium/20 pt-6">
+       <div class="space-y-6 text-sm border-t border-brandMedium/20 pt-6">
                 <!-- Ubicación -->
                 <div class="flex items-start gap-4">
                     <div class="text-brandLight mt-1">
@@ -87,26 +88,26 @@
                     </div>
                 </div>
 
-                <!-- Respaldo Legal -->
+                <!-- Respaldo Legal e Integración de QR -->
                 <div class="flex items-start gap-4">
                     <div class="text-brandLight mt-1">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-white">Información Fiscal</h4>
-                        <p class="text-slate-400 text-xs mt-0.5">GP Construcciones S.R.L.</p>
-                        <p class="text-slate-500 text-xs font-mono">NIT: 619666029</p>
+                    <div class="space-y-4 w-full">
+                        <div>
+                            <h4 class="font-semibold text-white">Información Fiscal</h4>
+                            <p class="text-slate-400 text-xs mt-0.5">GP Construcciones S.R.L.</p>
+                            <p class="text-slate-500 text-xs font-mono">NIT: 619666029</p>
+                        </div>
+                        
+                        <!-- Contenedor del QR de la Empresa -->
+                        <div class="bg-brandMedium/30 border border-brandLight/20 p-3 rounded-lg inline-block text-center">
+                            <p class="text-[11px] text-brandLight font-mono uppercase tracking-wider mb-2">Datos de la Empresa</p>
+                            <img src="qr-empresa.png" alt="Código QR GP Construcciones" class="w-32 h-32 mx-auto rounded bg-white p-1">
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Botón de Enlace Directo a WhatsApp -->
-            <div class="pt-2">
-                <a href="https://wa.me/59171012105" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brandMedium hover:bg-opacity-80 border border-brandLight/30 text-brandLight text-sm font-semibold px-6 py-3.5 rounded transition-all">
-                    <span>📱 Contactar vía WhatsApp</span>
-                </a>
-            </div>
-        </div>
 
         <!-- Bloque Derecho: Formulario Técnico Integrado (3 columnas) -->
         <div class="md:col-span-3 bg-brandMedium/10 border border-brandMedium/30 p-8 rounded-xl space-y-6">
