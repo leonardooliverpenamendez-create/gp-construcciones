@@ -43,24 +43,32 @@
 <body class="bg-blueprint text-slate-200 min-h-screen flex flex-col justify-between">
 
     <!-- 1. BARRA DE NAVEGACIÓN -->
+   <!-- 1. BARRA DE NAVEGACIÓN CORREGIDA (APTA PARA MÓVILES) -->
     <header class="border-b border-brandMedium/30 bg-brandDark/95 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <!-- Logotipo Institucional -->
-            <a href="index.html" class="flex flex-col">
-                <span class="text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
-                <span class="text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
-            </a>
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="index.html" class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-wider text-white">GP CONSTRUCCIONES</span>
+                    <span class="text-[10px] md:text-xs text-brandLight tracking-widest uppercase -mt-1 font-medium">Tu Ingeniero Asesor</span>
+                </a>
+                <!-- Botón de WhatsApp rápido visible solo en móvil -->
+                <a href="https://wa.me/59171012105" target="_blank" class="md:hidden bg-brandMedium border border-brandLight/30 text-brandLight text-[11px] uppercase tracking-wider font-semibold px-3 py-1.5 rounded">
+                    Cotizar
+                </a>
+            </div>
             
-            <!-- Menú Multipágina -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="index.html" class="text-brandLight transition-colors">Inicio</a>
+            <!-- Menú Adaptativo: Se acomoda en fila compacta en móviles y horizontal en PC -->
+            <nav class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs md:text-sm font-medium w-full md:w-auto border-t border-brandMedium/20 pt-3 md:pt-0 md:border-t-0">
+                <!-- Nota: Cambia la clase 'text-brandLight' al archivo correspondiente para resaltar la página activa -->
+                <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Inicio</a>
                 <a href="nosotros.html" class="text-slate-300 hover:text-white transition-colors">Nosotros</a>
                 <a href="servicios.html" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
                 <a href="obras.html" class="text-slate-300 hover:text-white transition-colors">Obras</a>
                 <a href="contacto.html" class="text-slate-300 hover:text-white transition-colors">Contacto</a>
             </nav>
 
-            <!-- Botón de Contacto Rápido -->
+            <!-- Botón de Escritorio -->
             <div class="hidden md:block">
                 <a href="https://wa.me/59171012105" target="_blank" class="bg-brandMedium hover:bg-opacity-80 border border-brandLight/30 text-brandLight text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded transition-all">
                     Cotizar Obra
